@@ -1,0 +1,24 @@
+{
+  "name": "Turn on song",
+  "description": "Turn on song if it been turn of",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {},
+  "action": {
+    "default_icon": {
+      "16": "img/icon.png",
+      "32": "img/icon.png",
+      "48": "img/icon.png",
+      "128": "img/icon.png"
+    },
+    "default_popup": "frontend/index.html"
+  },
+
+  "permissions": [
+    "tabs","activeTab","storage"
+  ],
+
+  "background": {
+    "service_worker": "./backgroundScripts/back.js"
+  }
+}

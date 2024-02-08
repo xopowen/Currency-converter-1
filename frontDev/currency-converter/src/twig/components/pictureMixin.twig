@@ -1,0 +1,12 @@
+{% block picture %}
+{\#    <!--nameImge->string,class->string-->\#}
+    <picture  class = {{ class }}  >
+        {% for posfix in [{pos:'.webp',type:"image/webp"},] %}
+            <source  srcset={{  nameImg ~ posfix.pos }} type = {{ posfix.type }} />
+            <source  srcset={{  nameImg ~ posfix.pos }} type = {{ posfix.type }} />
+        {% endfor %}
+
+        <img src='{{ nameImg ~ ".png" }}' alt = "" />
+    </picture>
+{% endblock %}
+

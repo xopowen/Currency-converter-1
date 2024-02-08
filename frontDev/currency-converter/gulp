@@ -1,0 +1,49 @@
+//в случии ошибки после если эта  проверка выведет ошибку следует
+//очистка пакетного менеджера npm cache clean --force
+//потом выполняем слудующее npm i npm -g
+//потом устронавлемаем галп глобально и галп в проект
+function defaultTask(cb) {
+  // place code for your default task here
+  cb();
+}
+
+exports.default = defaultTask
+//установка плагенов
+npm i <имя-плагена через дефис елси 2 слова > --save-dev(для сохранение версий пакета
+
+
+//плагины
+browser sync - для обновления браузера
+File Include - не устоновил но на будужщее должен знать(собирает разные куски файлов в один,шаблонизатор) https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqa2hONDlralZVWUJxVFlqbjB6T21VUklXWnNkd3xBQ3Jtc0tsX1hwUlphem5VYUhDNnVwNTZGbWgzYXRTRnRld2JwWlpHRnFCOF82NWQxQmgzLVVITkRyXzlSbVBjemt1SmU5d2lVRzFLSHpSLXFBc1VNUjFmV3NZWXZXOGlGUnFzcVAydW5vTmtKblo0YjNIMDFGWQ&q=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fgulp-file-include
+del - плагин даляет папку (выбраную) перед началом работы галп
+gulp-sass- ковертирует sass в css
+autoprefixer - автомотически всавляет нужные префиксы для браузера
+group-media-queries - групировака медиа запросов
+clean_css - сжимает и чистит css
+rename - в свяске с clean_css
+uglify_es - зжатие и оптимизаия js файлов
+Babel(ну установлен) - если js написан по новым стандартам но нужно потдерживать старые браузеры
+https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbGNwU0NtS0ZfVml0Mk9pU3Bpdm1LMW5RbE5VZ3xBQ3Jtc0tsQ0FUYWNqS0FPYUlNdEpEY0pyem5xTnRaLThVVjhSbXlIUVFkZnJPUFFOR0F5WFFTaGhKcXB1X2VqR1lBS1FqWkNQV09aY1VpaXZQRWQxV3Y2MWVQQ2dSS3k0TWJubDdfdC1hRThxaHVyYU56SXdWOA&q=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fgulp-babel
+//
+обработка картинок и шрифтов
+
+imagemin - оптимизаци картинок
+webp-конвертирует в формат webp
+webp-html - Вставляет в html сылки на webp автомотически
+webpcss - тоже но для css
+svg-sprite - плагин работы с svg файлами. спрайтовыми вайлами типа иконок и тд(сейчас не используеш но на будущее знай
+
+
+//работа с шрифтами
+gulp-ttf2woff
+gulp-ttf2woff2
+fonter - конвертирует шрифты
+
+gulp-version-number//решение проблемы кеширования
+//работы с ошибками
+gulp-replace - поиск и змаўчанн
+gulp-plumber - обработка ошибок
+gulp-notify - сообщениия (подксказки)
+
+//js
+wabpack wabpack-stream - работа с js

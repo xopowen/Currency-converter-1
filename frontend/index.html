@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta property="og:title" content="Учебный сайт.">
+    <meta property="og:description" content="Необходим для показа навыков.">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Необходим для показа навыков.">
+    <meta property="og:image" content="http://best-site/thumbnail.jpg">
+    <meta property="og:url" content="./index.htm">
+    <meta name="og:author" content="xopowen">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="keywords" content="project of learn, xopowen">
+    <meta http-equiv="Cache-control" content="public">
+    <link href="./static/css/main.css" rel="stylesheet">
+    <script defer="defer" src="./static/js/main.js"></script>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<body class="gray-theme">
+<header class="header">
+
+</header>
+<main>
+    <article class="converter montserrat">
+        <nav class="converter__header">
+            <ul class="converter__list-icons">
+                <li class="converter__nav-icon">
+                    <button id="btn-frog">
+                        <img width="162" height="185" src="./static/img/icons/frog.svg" alt="frog">
+                    </button>
+                </li>
+                <li class="converter__nav-icon">
+                    <button id="btn-cleaner">
+                        <img width="162" height="185" src="./static/img/icons/cleaner.svg" alt="clean">
+                    </button>
+                </li>
+                <li class="converter__nav-icon">
+                    <button id="btn-burger">
+                        <img width="162" height="185" src="./static/img/icons/burger.svg" alt="burger">
+                    </button>
+                </li>
+                <li class="converter__nav-icon">
+                    <button id="btn-lang">
+                        <img width="162" height="185" src="./static/img/icons/lang.svg" alt="lang">
+                    </button>
+                </li>
+                <li class="converter__nav-icon">
+                    <button id="btn-gear">
+                        <img width="162" height="185" src="./static/img/icons/gear.svg" alt="gear">
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <div id="main_currency-converter" class="converter__main">
+            <form id="form-list-currency" class="converter__fields custom-main-scroll">
+                <div hidden style="display:none;" class="currency-field">
+                    <label class="currency-field__input field-input montserrat__regular text_24">
+                        <input data-input="" data-value="" name="DOP" type="text" value="">
+                    </label>
+                    <button type="button" data-btn="" class="currency-field__btn-show-list montserrat__medium text_18">
+                        DOP
+                    </button>
+                    <div data-imgconainer class="currency-field__country-flag">
+                        <img src="./static/img/FLAG%20DOP.jpg" class="montserrat__medium text_18" alt="DOP" title="DOP">
+                    </div>
+                </div>
+            </form>
+            <button id="btn-add-currency" type="button" class="converter__btn-add text_15 montserrat__medium">
+                Add more
+            </button>
+        </div>
+        <form id="form-add-currency" class="converter__main">
+
+            <h1 class="converter__head montserrat__semi-bold text_20">
+                Currency
+            </h1>
+
+            <label class="field-input converter__search">
+                <input id="form-search" placeholder="Find" type="text" class="montserrat__medium text__14">
+            </label>
+            <ul class="converter__list-currency currency custom-main-scroll">
+                <li hidden style="display: none" class="currency__item">
+                    <div class="currency__flag">
+                        <img src="" data-currency="DOP" alt="DOP" title="DOP">
+                    </div>
+                    <p title="DOP" class="currency__title montserrat__medium text_20">DOP</p>
+                </li>
+            </ul>
+
+
+        </form>
+        <div id="offer-unblock" class="converter__main">
+
+            <div class="offer-unblock">
+                <ul class="offer-unblock__list montserrat__regular text_18">
+                    <li class="offer-unblock__item">
+                        Free themes
+                    </li>
+                    <li class="offer-unblock__item">
+                        Add more currency
+                    </li>
+                    <li class="offer-unblock__item">
+                        Support us
+                    </li>
+                </ul>
+                <button id="btn-offer-unlock" class="offer-unblock__bnt montserrat__medium text_15">
+                    Unlock app
+                </button>
+            </div>
+
+        </div>
+        <div id="two-currency-convert" class="converter__main">
+
+            <form id="form-two-currency-converter" class="converter__fields">
+                <div class="converter__swap">
+                    <div id="two-currency-left" class="currency-field">
+                        <button type="button" class="currency-field__btn-show-list montserrat__medium text_18">
+                            DOP
+                        </button>
+                        <div class="currency-field__country-flag">
+                            <img src="./static/img/FLAG%20DOP.jpg" alt="DOP" title="DOP">
+                        </div>
+                    </div>
+                    <button type="button" id="btn-two-currency-swap" class="converter__swap-img">
+                        <img src="./static/img/icons/arrive.svg" alt="swap">
+                    </button>
+                    <div id="two-currency-right" class="currency-field">
+                        <button type="button" class="currency-field__btn-show-list montserrat__medium text_18">
+                            DOP
+                        </button>
+                        <div class="currency-field__country-flag">
+                            <img src="./static/img/FLAG%20DOP.jpg" alt="DOP" title="DOP">
+                        </div>
+                    </div>
+                </div>
+                <div class="currency-field currency-field_center">
+                    <label class="currency-field__input field-input montserrat__regular text_24">
+                        <input data-input="" data-value="99" type="text" value="99">
+                    </label>
+                </div>
+                <p class="converter__output converter__output_m39 montserrat__boid text_30">
+                    <span data-output="" data-value="123.456">123,456</span> <span data-currency="TRY">TRY</span>
+                </p>
+            </form>
+
+
+        </div>
+        <div id="settings-output" class="converter__main">
+            <form id="form-setting-output" class="settings-output custom-radio">
+                <div class="settings-output__container-for-list custom-main-scroll">
+                    <ul class="settings-output__list-radio settings-output__list-radio_separator montserrat__medium text_21">
+                        <li class="settings-output__item-list">
+                            <input type="radio" id="separator-comma-point" name="separator" value="comma-point">
+                            <label for="separator-comma-point" class="settings-output__field">1,234.56</label>
+                        </li>
+                        <li class="settings-output__item-list">
+                            <input type="radio" id="separator-point-comma" name="separator" value="point-comma">
+                            <label for="separator-point-comma" class="settings-output__field">1.234,56</label>
+                        </li>
+
+                        <li class="settings-output__item-list">
+                            <input type="radio" id="separator-point" name="separator" value="point">
+                            <label for="separator-point" class="settings-output__field">1 234.56</label>
+
+                        </li>
+                        <li class="settings-output__item-list">
+                            <input type="radio" id="separator-comma" name="separator" value="comma">
+                            <label for="separator-comma" class="settings-output__field">1 234,56</label>
+
+                        </li>
+                    </ul>
+
+                    <ul class="settings-output__list-radio settings-output__list-radio_rounding montserrat__medium text_21">
+                        <li class="settings-output__item-list">
+                            <input type="radio" id="rounding-2" name="rounding" value="2">
+                            <label for="rounding-2" class="settings-output__field">.02</label>
+                        </li>
+                        <li class="settings-output__item-list">
+                            <input type="radio" id="rounding-3" name="rounding" value="3">
+                            <label for="rounding-3" class="settings-output__field">.003</label>
+                        </li>
+                        <li class="settings-output__item-list">
+                            <input type="radio" id="rounding-4" name="rounding" checked="checked" value="4">
+                            <label for="rounding-4" class="settings-output__field">.0004</label>
+                        </li>
+                        <li class="settings-output__item-list">
+                            <input type="radio" id="rounding-5" name="rounding" value="5">
+                            <label for="rounding-5" class="settings-output__field">.00005</label>
+                        </li>
+                        <li class="settings-output__item-list">
+                            <input type="radio" id="rounding-0" name="rounding" value="0">
+                            <label for="rounding-0" class="settings-output__field">Don’t show</label>
+                        </li>
+                    </ul>
+                </div>
+                <p data-output="" data-value="1123.456" class="converter__output converter__output_m26 montserrat__boid text_30">
+                    1 123,456
+                </p>
+            </form>
+
+
+        </div>
+        <div id="settings-theme" class="converter__main">
+            <form id="form-settings-theme" class="custom-radio settings-theme">
+                <ul class="settings-theme__list custom-main-scroll">
+                    <li class="settings-theme__item">
+                        <input id="theme-blue" type="radio" name="theme" value="blue">
+                        <label for="theme-blue">
+                            <img width="89" height="99" src="./static/img/theme-blue.svg" alt="blue theme">
+                        </label>
+                    </li>
+                    <li class="settings-theme__item">
+                        <input id="theme-green" type="radio" name="theme" value="green">
+                        <label for="theme-green">
+                            <img width="89" height="99" src="./static/img/theme-green.svg" alt="green theme">
+                        </label>
+                    </li>
+                    <li class="settings-theme__item">
+                        <input id="theme-orange" type="radio" name="theme" value="orange">
+                        <label for="theme-orange">
+                            <img width="89" height="99" src="./static/img/theme-orange.svg" alt="orange theme">
+                        </label>
+                    </li>
+                    <li class="settings-theme__item">
+                        <input id="theme-lock" type="radio" name="theme" value="lock">
+                        <label for="theme-lock">
+                            <img width="89" height="99" src="./static/img/icons/lock.svg" alt="orange theme">
+                        </label>
+                    </li>
+                </ul>
+
+            </form>
+
+
+        </div>
+    </article>
+</main>
+<footer class="footer">
+
+</footer>
+
+</body>
+</html>
+<!DOCTYPE html>

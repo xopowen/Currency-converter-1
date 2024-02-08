@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('../components/head.html')
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<body class="gray-theme">
+@@include('../components/header.html',{icon:false,header__gray:'',rightIcons:'set_profile'})
+<main>
+    <article class="converter montserrat">
+        <nav class="converter__header">
+            <ul class="converter__list-icons">
+                <li class="converter__nav-icon">
+                    <button id="btn-frog">
+                        <img width="162" height="185" src="@@webRoot/static/img/icons/frog.svg" alt="frog"/>
+                    </button>
+               </li>
+                <li class="converter__nav-icon">
+                    <button id="btn-cleaner">
+                        <img width="162" height="185" src="@@webRoot/static/img/icons/cleaner.svg" alt="clean"/>
+                    </button>
+                </li>
+                <li class="converter__nav-icon">
+                    <button id="btn-burger">
+                        <img width="162" height="185" src="@@webRoot/static/img/icons/burger.svg" alt="burger"/>
+                    </button>
+                </li>
+                <li class="converter__nav-icon">
+                    <button id="btn-lang">
+                        <img width="162" height="185" src="@@webRoot/static/img/icons/lang.svg" alt="lang"/>
+                    </button>
+                </li>
+                <li class="converter__nav-icon">
+                    <button id="btn-gear">
+                        <img width="162" height="185" src="@@webRoot/static/img/icons/gear.svg" alt="gear"/>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+            @@include('../components/currency-converter-main.html')
+            @@include('../components/form-add-currency.html')
+            @@include('../components/offer-unblock.html')
+            @@include('../components/two-currency-convert.html')
+            @@include('../components/settings-output.html')
+            @@include('../components/settings-theme.html')
+    </article>
+</main>
+@@include('../components/footer.html')
+</body>
+</html>
+<!DOCTYPE html>
+
